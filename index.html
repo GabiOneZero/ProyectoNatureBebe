@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Bebé - Home Page</title>
+    <link rel="icon" type="image/png" href="images/iconos/icono-logotipo-verde.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+    <script src="jq/jquery-3.5.1.min.js"></script>
+    <script src="jq/jquery.animate-colors-min.js"></script>
+    <script src="jq/script.js"></script>
+
+
+    <!--******************************************Plugin FORMULARIOS**************************************************-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <!--***********************************************************************************************************-->
+    <!--******************************************Plugin SLIDER**************************************************-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--***********************************************************************************************************-->
+
+</head>
+
+<body>
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--**********************************************HEADER*********************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+
+    <header id="cabecera">
+
+        <svg id="fondo-cabecera-movil" width="100vw" height="146" viewBox="0 0 358 146" fill="none"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M358 64.2199C358 64.2199 98.9968 40.1375 0 146V0H358V64.2199Z" fill="url(#paint0_linear)" />
+            <defs>
+                <linearGradient id="paint0_linear" x1="179" y1="0" x2="194.589" y2="66.5225"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#92BF2A" />
+                    <stop offset="1" stop-color="#6D9B00" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <svg id="fondo-cabecera-tablet" width="100vw" height="177" viewBox="0 0 885 177" fill="none"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M885 77.8557C885 77.8557 244.727 48.6598 0 177V0H885V77.8557Z" fill="url(#paint1_linear)" />
+            <defs>
+                <linearGradient id="paint1_linear" x1="442.5" y1="0" x2="452.15" y2="83.9669"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#92BF2A" />
+                    <stop offset="1" stop-color="#6D9B00" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+
+        <nav class="menu">
+            <ul id="opciones-menu-desplegable">
+                <li>
+                    <picture id="logo-cabecera">
+                        <img src="images/iconos/icono-logotipo-verde.svg" alt="logotipo de la web">
+                    </picture>
+                </li>
+                <li id="tu-cuenta"><a href="perfil.html">Tu cuenta</a></li>
+                <li id="recetas"><a href="recetas.html">Recetas</a></li>
+                <li id="blog"><a href="blog.html">Blog</a></li>
+                <li id="contacto"><a href="contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav id="menu-cabecera">
+            <a href="index.html">
+                <picture id="logo-cabecera-blanco">
+                    <img src="images/iconos/icono-logotipo-blanco.svg" alt="logotipo de la web">
+                </picture>
+            </a>
+            <nav id="menu-hamburguesa">
+                <span class="hamburguer-line"></span>
+                <!--  <span class="hamburguer-line"></span>-->
+                <span class="hamburguer-line"></span>
+            </nav>
+
+            <a href="login.html"><img src="images/iconos/icono-usuario.svg" alt="icono de cuenta de usuario"></a>
+        </nav>
+    </header>
+
+    <!--***********************************************************************************************************-->
+    <!--*********************************************HEADER PC**************************************************************-->
+    <!--***********************************************************************************************************-->
+
+    <header id="cabecera-escritorio">
+
+        <picture id="fondo-cabecera-escritorio">
+            <img src="images/fondos/fondo-cabecera-escritorio.png" alt="fondo para la cabecera">
+        </picture>
+        <a href="index.html">
+            <picture id="esquina-logotipo">
+                <img src="images/fondos/esquina-escritorio.svg" alt="fondo para la cabecera">
+            </picture>
+        </a>
+        <nav id="menu-cabecera-escritorio">
+            <div id="contenedor-botonera">
+                <picture id="fondo-menu">
+                    <img src="images/fondos/fondo-menu-escritorio.png" alt="fondo para el menu de la cabecera">
+                </picture>
+                <div id="botonera-menu-escritorio">
+                    <button class="usuario" type="button" onclick="location.href='login.html';">Usuario</button>
+                    <button class="recetas" type="button" onclick="location.href='recetas.html';">Recetas</button>
+                    <button class="blog" type="button" onclick="location.href='blog.html';">Blog</button>
+                    <button class="contacto" type="button" onclick="location.href='contactanos.html';">Contacto</button>
+                </div>
+            </div>
+        </nav>
+
+        <button id="btn-preparate" type="button" onclick="location.href='recetas.html';">Prepárate para el
+            verano</button>
+        <div id="texto-introduccion">
+            <div id="contenedor">
+                <video id="reproduccion_video">
+                    <source src="videos/NatureBebé2021.mp4" type="video/mp4">
+                    <source src="videos/NatureBebé2021.ogv" type="video/ogg">
+                    <source src="videos/NatureBebé2021.webm" type="video/webm">
+                    El navegador no soporta la etiqueta VIDEO.
+                </video>
+
+                <div id="reproductor">
+                    <div id="info_superior">
+                        <div id="tiempo">
+                            <p><span id="tiempo_actual">00:00</span>/<span id="tiempo_total">0:44</span></p>
+                        </div>
+                        <div id="volumen">
+                            <img id="btn_volumen_mute" src="images/iconos/reproductor/volumen_alto.svg"
+                                alt="icono de volumen">
+                            <input type="range" id="volume" min="0" max="1" value="0.5" step="0.1">
+                        </div>
+                    </div>
+                    <div id="botonera">
+                        <img id="btn_menos_velocidad" src="images/iconos/reproductor/menos_velocidad.svg"
+                            alt="botón menos velocidad">
+                        <img id="btn_stop" src="images/iconos/reproductor/btn_stop.svg" alt="botón stop">
+                        <img id="btn_retroceder" src="images/iconos/reproductor/retroceder.svg" alt="botón retroceder">
+                        <img id="btn_play_pause" src="images/iconos/reproductor/btn_play.svg" alt="botón play o pause">
+                        <img id="btn_avanzar" src="images/iconos/reproductor/avanzar.svg" alt="botón avanzar">
+                        <img id="btn_pantalla_completa" src="images/iconos/reproductor/pantalla_completa.svg"
+                            alt="botón pantalla compelta">
+                        <img id="btn_mas_velocidad" src="images/iconos/reproductor/mas_velocidad.svg"
+                            alt="botón más velocidad">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button id="btn-entradas" type="button" onclick="location.href='blog.html';">Últimas entradas</button>
+    </header>
+
+
+    <!--*************************************#menu*********************************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--**********************************************MAIN*********************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <main id="contenido">
+        <div id="introduccion">
+            <picture id="logotipo-principal">
+                <img src="images/iconos/logotipo-grande.svg" alt="logotipo principal">
+            </picture>
+            <h1 id="nombre-pagina">NatureBebé</h1>
+            <div class="slider">
+                <picture class="imagen-introduccion">
+                    <img src="images/stock/slider1.png" alt="imagen de bebés para el slider">
+                </picture>
+                <picture class="imagen-introduccion">
+                    <img src="images/stock/slider2.png" alt="imagen de bebés para el slider">
+                </picture>
+                <picture class="imagen-introduccion">
+                    <img src="images/stock/slider3.png" alt="imagen de bebés para el slider">
+                </picture>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt eros
+                quis nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                convallis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt eros
+                quis nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                convallis id </p>
+        </div>
+        <section>
+            <article id="apartado-sobre-nosotros">
+                <div id="bloque-texto1">
+                    <h2 id="titulo-sobre-nosotros">Sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing</a> elit. Nullam tincidunt eros
+                        quis
+                        nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque
+                        arcu
+                        convallis id. Praesent venenatis rutrum urna, lobortis
+                        vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor. </p>
+                </div>
+                <picture>
+                    <img src="images/stock/sobre-nosotros.png" alt="imagen de bebés sobre nosotros">
+                </picture>
+                <picture id="imagen-article-extra">
+                    <img src="images/stock/sobre-nosotros.png" alt="imagen de bebés sobre nosotros extra">
+                </picture>
+
+                <div id="bloque-texto2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt eros quis nisl feugiat,
+                        non
+                        finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu convallis id.
+                        Lorem
+                        ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nullam tincidunt eros quis nisl <a href="#">adipiscing</a> feugiat, non finibus
+                        velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu convallis id. </p>
+
+
+                    <button class="btn-cuentanos" onclick="location.href='contactanos.html';"
+                        type="button">Cuéntanos</button>
+                </div>
+            </article>
+
+            <article id="apartado-unete">
+                <!--  <picture id="fondo-articulo">
+                    <img src="images/fondos/fondo-articulo.svg" alt="imagen de familia">
+                </picture>
+                -->
+                <h2 id="titulo-registrate">Únete a la familia NatureBebé</h2>
+                <div id="bloque-imagenes">
+                    <picture id="imagen-unete">
+                        <img src="images/stock/unete.png" alt="imagen de familia">
+                    </picture>
+                    <picture id="imagen-unete-inversa">
+                        <img src="images/stock/unete-inversa.png" alt="imagen de familia">
+                    </picture>
+                </div>
+                <p>Lorem ipsum dolor sit amet, <a href="#">adipiscing</a> adipiscing elit. Nullam tincidunt
+                    eros quis nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere
+                    pellentesque arcu convallis id.
+                    finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu convallis id. Lorem
+                    ipsum dolor sit amet, consectetur </p>
+                <button id="btn-registrate" onclick="location.href='registrate.html';" type="button">Regístrate
+                    gratis</button>
+            </article>
+        </section>
+    </main>
+    <!--***********************************************************************************************************-->
+    <!--*********************************************MAIN PC**************************************************************-->
+    <!--***********************************************************************************************************-->
+    <main id="contenido-escritorio">
+
+        <section class="apartado-blogs">
+            <article class="articulo_primero">
+                <h3 id="titulo-blog">¿Cómo quitar el chupete?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Nullam tincidunt eros quis
+                    nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                    convallis id. Praesent venenatis rutrum urna, lobortis
+                    vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor. </p>
+                <small>02 jun. - Alba Escudero</small>
+                <button class="btn-leer-mas" type="button" onclick="location.href='blog.html';">Leer más</button>
+            </article>
+
+            <article class="articulo_central">
+                <h3 id="titulo-blog1">Moda otoñal para tu bebé</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Nullam tincidunt eros quis
+                    nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                    convallis id. Praesent venenatis rutrum urna, lobortis
+                    vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor. </p>
+                <small>18 sep. - Eduardo Estébez</small>
+                <button class="btn-leer-mas" type="button" onclick="location.href='blog.html';">Leer más</button>
+            </article>
+
+            <article class="articulo_ultimo">
+                <h3 id="titulo-blog2">Sueño reparador</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Nullam tincidunt eros quis
+                    nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                    convallis id. Praesent venenatis rutrum urna, lobortis
+                    vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor. </p>
+                <small>10 feb. - Raquel Jiménez</small>
+                <button class="btn-leer-mas" type="button" onclick="location.href='blog.html';">Leer más</button>
+            </article>
+        </section>
+
+        <section class="apartado-blogs apartado-blogs-extra">
+
+            <article class="articulo_primero">
+                <h3 id="titulo-blog3">¿Cómo quitar el chupete?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Nullam tincidunt eros quis
+                    nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                    convallis id. Praesent venenatis rutrum urna, lobortis
+                    vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor. </p>
+                <small>02 jun. - Alba Escudero</small>
+                <button class="btn-leer-mas" type="button" onclick="location.href='blog.html';">Leer más</button>
+            </article>
+
+            <article class="articulo_central">
+                <h3 id="titulo-blog4">Moda otoñal para tu bebé</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Nullam tincidunt eros quis
+                    nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                    convallis id. Praesent venenatis rutrum urna, lobortis
+                    vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor. </p>
+                <small>18 sep. - Eduardo Estébez</small>
+                <button class="btn-leer-mas" type="button" onclick="location.href='blog.html';">Leer más</button>
+            </article>
+
+            <article class="articulo_ultimo">
+                <h3 id="titulo-blog5">Sueño reparador</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Nullam tincidunt eros quis
+                    nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu
+                    convallis id. Praesent venenatis rutrum urna, lobortis
+                    vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor. </p>
+                <small>10 feb. - Raquel Jiménez</small>
+                <button class="btn-leer-mas" type="button" onclick="location.href='blog.html';">Leer más</button>
+            </article>
+
+        </section>
+        <button id="btn-mas" class="btn-mas-menos" type="button">Ver más</button>
+        <button id="btn-menos" class="btn-mas-menos" type="button">Ver menos</button>
+        <section id="apartado-recetas">
+
+            <article>
+                <a href="recetas.html">
+                    <picture>
+                        <img src="images/stock/muestra-receta1.png" alt="imagen muestra receta 1">
+                    </picture>
+                </a>
+                <h2 class="titulo-receta">Smoothies de fruta con avena</h2>
+                <small>Fácil - 10min.</small>
+            </article>
+
+            <article>
+                <a href="recetas.html">
+                    <picture>
+                        <img src="images/stock/muestra-receta2.png" alt="imagen muestra receta 2">
+                    </picture>
+                </a>
+                <h2 class="titulo-receta">Helado natural sin azúcar</h2>
+                <small>Fácil - 10min.</small>
+            </article>
+            <article>
+                <a href="recetas.html">
+                    <picture>
+                        <img src="images/stock/muestra-receta1.png" alt="imagen muestra receta 1">
+                    </picture>
+                </a>
+                <h2 class="titulo-receta">Smoothies de fruta con avena</h2>
+                <small>Fácil - 10min.</small>
+            </article>
+            <article>
+                <a href="recetas.html">
+                    <picture>
+                        <img src="images/stock/muestra-receta2.png" alt="imagen muestra receta 2">
+                    </picture>
+                </a>
+                <h2 class="titulo-receta">Helado natural sin azúcar</h2>
+                <small>Fácil - 10min.</small>
+            </article>
+        </section>
+
+
+        <section id="apartado-info-home">
+            <article id="articulo-sobre-nosotros">
+                <picture>
+                    <img src="images/stock/fondo-nosotros-escritorio.png" alt="imagen de bebés sobre nosotros">
+                </picture>
+                <div>
+                    <h2 class="titulo-sobre-nosotros">Sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing</a> elit. Nullam tincidunt eros
+                        quis
+                        nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque
+                        arcu
+                        convallis id. Praesent venenatis rutrum urna, lobortis
+                        vehicula ipsum rutrum at. Donec lobortis est vel tortor venenatis tempor.
+                        eros quis nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere
+                        pellentesque arcu convallis id.
+                        finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu convallis id.
+                        Lorem
+                        ipsum dolor sit amet, consectetur </p>
+                </div>
+            </article>
+
+            <article id="articulo-unete">
+                <picture id="fondo-articulo-unete">
+                    <img src="images/stock/fondo-familia-escritorio.png" alt="imagen de familia">
+                </picture>
+                <div>
+                    <h2>Únete a la familia</h2>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">adipiscing</a> adipiscing elit. Nullam tincidunt
+                        eros quis nisl feugiat, non finibus velit interdum. Praesent dignissim eros nulla, posuere
+                        pellentesque arcu convallis id.
+                        finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu convallis id.
+                        Lorem
+                        ipsum dolor sit amet, consectetur. eros quis nisl feugiat, non finibus velit interdum. Praesent
+                        dignissim eros nulla, posuere
+                        pellentesque arcu convallis id.
+                        finibus velit interdum. Praesent dignissim eros nulla, posuere pellentesque arcu convallis id.
+                        Lorem
+                        ipsum dolor sit amet, consectetur </p>
+                </div>
+            </article>
+        </section>
+
+        <form action="#">
+            <input class="elementos-formulario" type="email" name="correo" id="correo-form" placeholder="E-mail"
+                required>
+            <button class="registrar" type="button">Boletín gratuito</button>
+        </form>
+    </main>
+
+
+
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--**********************************************FOOTER*********************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+
+    <footer id="pie" class="pie-principal pie-index">
+
+        <svg id="fondo-footer-movil" width="100vw" height="210" viewBox="0 0 358 310" fill="none"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path
+                d="M-4.15962e-05 88.6442C-4.15962e-05 88.6442 259.003 114.748 358 3.05176e-05L358 311L0 311L-4.15962e-05 88.6442Z"
+                fill="url(#paint0_linear)" />
+            <defs>
+                <linearGradient id="paint0_linear" x1="168.739" y1="311.501" x2="165.281" y2="85.1505"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#92BF2A" />
+                    <stop offset="1" stop-color="#6D9B00" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <svg id="fondo-footer-tablet" width="100vw" height="210" viewBox="0 0 885 383" fill="none"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M-1 109.166C-1 109.166 639.997 141.313 885 3.05176e-05L885 383L-0.999878 383L-1 109.166Z"
+                fill="url(#paint1_linear)" />
+            <defs>
+                <linearGradient id="paint1_linear" x1="416.605" y1="383.617" x2="414.486" y2="104.815"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#92BF2A" />
+                    <stop offset="1" stop-color="#6D9B00" />
+                </linearGradient>
+            </defs>
+        </svg>
+        <div id="elementos-footer">
+            <nav id="redes-sociales">
+                <a href="https://pinterest.es"><img src="images/iconos/icono-pinterest.png"
+                        alt="icono de pinterest"></a>
+                <a href="https://www.facebook.com/"><img src="images/iconos/icono-facebook.png"
+                        alt="icono de facebook"></a>
+                <a href="https://www.instagram.com/"><img src="images/iconos/icono-instagram.png"
+                        alt="icono de instagram"></a>
+            </nav>
+            <nav id="navegacion-politica">
+                <a id="enlace-privacidad" href="privacidad.html">Política de privacidad</a>
+                <a id="enlace-cookies" href="cookies.html">Política de cookies</a>
+
+            </nav>
+            <small id="texto-copiright">© 2021</small>
+        </div>
+    </footer>
+    <!--***********************************************************************************************************-->
+    <!--*********************************************FOOTER PC*****************************************************-->
+    <!--***********************************************************************************************************-->
+    <footer id="pie-escritorio">
+        <picture id="fondo-footer-escritorio"><img src="images/fondos/fondo-footer-pc.svg" alt="fondo para el footer">
+        </picture>
+
+        <div id="elementos-footer-escritorio">
+            <nav id="redes-sociales-escritorio">
+                <a href="https://pinterest.es"><img src="images/iconos/icono-pinterest.png"
+                        alt="icono de pinterest"></a>
+                <a href="https://www.facebook.com/"><img src="images/iconos/icono-facebook.png"
+                        alt="icono de facebook"></a>
+                <a href="https://www.instagram.com/"><img src="images/iconos/icono-instagram.png"
+                        alt="icono de instagram"></a>
+            </nav>
+            <nav id="navegacion-politica-escritorio">
+                <a id="enlace-privacidad-escritorio" href="privacidad.html">Política de privacidad</a>
+                <a id="enlace-cookies-escritorio" href="cookies.html">Política de cookies</a>
+            </nav>
+            <div id="logotipo">
+                <picture id="logo-footer">
+                    <img src="images/iconos/icono-logotipo-blanco.svg" alt="logotipo de la web">
+                </picture>
+                <small id="texto-copiright-escritorio">© 2021</small>
+            </div>
+        </div>
+    </footer>
+    <div id="volverarriba">
+        <a href="#">&uarr;</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1620 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #D96998;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h4, h5, h6{
+    font-family: "Righteous", sans-serif;
+    color: #D96998;
+    font-weight: normal;
+    text-align: center;
+    margin: 1rem;
+}
+
+h3{
+    font-family: "Righteous", sans-serif;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+p{
+    font-family: Roboto, sans-serif;
+    color: #726F6F;
+    margin: 2rem;
+}   
+button{
+    font-family: "Righteous", sans-serif;
+    color: white;
+    font-weight: lighter;
+    background-color: #D96998;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+footer a, footer p{
+    font-family: "Righteous", sans-serif;
+    color: white;
+}
+small{
+    font-family: "Righteous", sans-serif;
+    text-align: center;
+    color: white;
+    padding:1rem;
+}
+img{
+    display: block;
+    margin: auto;
+}
+
+/************************************************************/
+/************************************************************/
+/*****************************HOME**************************/
+/************************************************************/
+/************************************************************/
+                            /*HEADER*/
+/************************************************************/
+
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+
+
+header#cabecera {
+  position: fixed; 
+  width: 100%; 
+  z-index: 1;
+}
+
+header#cabecera>svg#fondo-cabecera-movil{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+ }
+
+header#cabecera>svg#fondo-cabecera-tablet{
+    display: none;
+}
+
+header#cabecera>nav#menu-cabecera>a>picture#logo-cabecera>img{
+     margin-top: 0.5rem;
+ }
+
+header#cabecera>nav#menu-cabecera{     
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0.8rem;
+ }
+header#cabecera>nav#menu-cabecera>a>img{
+    margin: 0.5rem 0.5rem 0.5rem 1.4rem;
+}
+/*Menú hamburguesa*/
+
+header#cabecera>nav#menu-cabecera>nav#menu-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 1rem;
+    margin: 0.7rem 1rem 0.7rem 0.4rem;
+}
+
+header#cabecera>nav#menu-cabecera>nav#menu-hamburguesa>span.hamburguer-line{
+    height: 0.4rem;
+    width: 2rem;
+    background-color: white;
+    border-radius:  50%;
+}
+
+.menu{
+    padding-top: 6rem;
+    background-color: white;
+    position: absolute;
+    top:-28rem;
+    width: 100vw;
+    z-index: -1;
+}
+
+.menu>ul{       
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    margin-top: 5vh;
+}
+.menu>ul>li{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #D96998;
+    width: 80vw;
+    cursor: pointer;
+}
+
+.menu>ul>li>a{
+    font-family: "Righteous", sans-serif;
+}
+
+
+.hamburguesa-animada1{
+    transform: translateY(0.34rem)rotate(45deg);
+    transition: 0.5s linear;
+}
+.hamburguesa-animada2{
+    transform: translateY(-0.34rem)rotate(-45deg);
+    transition: 0.5s linear;
+}
+
+
+main#contenido>div#formulario>picture#fondo-hoja>img#fondo-hoja-tablet{
+    display:none;
+    
+}
+
+main#contenido-perfil-escritorio{
+    display: none;
+}
+
+main#contenido>div#formulario>picture#fondo-hoja>img#fondo-hoja-movil{
+    display:block;
+    
+}
+
+footer.pie-index{
+    background-color: #E0EDC3;
+}
+
+footer#pie>picture#fondo-footer>img#fondo-footer-tablet{
+    display: none;
+}
+
+footer#pie>picture#fondo-footer>img#fondo-footer-movil{
+    display: block;
+}
+
+/************************************************************/
+                            /*FORMS*/
+/************************************************************/
+
+
+header#cabecera>nav#menu-cabecera>nav#menu-hamburguesa>span.hamburguer-line-green{
+    height: 0.4rem;
+    width: 2rem;
+    background-color: #6D9B00 ;
+    border-radius: 50%;
+}
+
+.menu-verde{
+    background-color: #92BF2A;
+}
+.menu-verde>ul>li{
+    color: white;
+}
+
+
+/*************************************************************/
+/********************************MAIN************************/
+/*************************************************************/
+main#contenido{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    padding-top: 25%;
+}
+main#contenido>h2{
+    display: none;
+}
+
+main#contenido>div#introduccion{
+    display: flex;
+    flex-flow: column;
+}
+
+main#contenido>div#introduccion>picture.imagen-introduccion>img{ 
+    width: 80%;
+    height: auto;
+}
+main#contenido>section>article{
+    padding: 0.8rem 0 0.8rem 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column;
+}
+main#contenido>section>article#apartado-unete{   
+    padding-top: 7rem;
+    background-image: url("images/fondos/fondo-articulo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+main#contenido>section>article>button{
+    align-self: center;
+    bottom: -1rem;
+    cursor: pointer;
+}
+
+main#contenido>section>article>button.btn-cuentanos{
+    z-index: 0;
+}
+
+main#contenido>section>article#apartado-unete>picture#imagen-unete{   
+    width: 100vw;
+    height: auto;
+}
+ main#contenido>section>article>picture#fondo-articulo>img{
+     width: 100vw;
+     height: auto;  
+     bottom: -10rem;
+     z-index: -1;
+  }
+
+main#contenido>section>article>p {
+    bottom: 1rem;
+}
+main#contenido>section img{
+    width: 100%;
+}
+
+  main#contenido>section>article#apartado-unete>h2#titulo-registrate{
+    top: -42rem;
+ }
+
+ main#contenido>section>article#apartado-sobre-nosotros>picture#imagen-article-extra{
+     display: none;
+ }
+ main#contenido>section>article#apartado-unete>div#bloque-imagenes>picture#imagen-unete-inversa{
+    display: none;
+}
+
+ main#contenido>section>article#apartado-sobre-nosotros>div#bloque-texto2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+ .bx-wrapper{
+    align-self: center;
+    width: 100%;
+}
+
+div#entrada-blog-expandida{
+    display: none;
+}
+
+ /************************************************************/
+                            /*FORMS*/
+/************************************************************/
+
+main#contenido.contenido-formulario{
+    padding-top: 3.5rem;
+    height: 26.3rem;    
+    position: relative;
+}
+
+main#contenido>div#formulario{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+main#contenido>div#formulario>picture#fondo-hoja{   
+    width: 100vw;
+    height: auto;
+}
+main#contenido>div#formulario>picture#fondo-hoja>img{
+     width: 100vw;
+     height: auto;  
+    position: relative;
+  }
+
+main#contenido>div#formulario>form#form-login{   
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/fondos/fondo-hoja.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+}
+
+main#contenido>div#formulario>form#form-login>div{
+    margin: 0.7rem;
+}
+
+main#contenido>div#formulario>form#form-login>div#campos-formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+main#contenido>div#formulario>form#form-login>div#campos-formulario>input{
+    font-family: "Righteous", sans-serif;
+    color: #92BF2A;
+    background-color: #E0EDC3;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+main#contenido>div#formulario>form#form-login>div#campos-formulario>textarea{
+    font-family: "Righteous", sans-serif;
+    color: #92BF2A;
+    background-color: #E0EDC3;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    margin-bottom: 0.7rem;
+    resize: none;
+}
+
+main#contenido>div#formulario>form#form-login>div#campos-formulario>input::placeholder{   
+    color: #92BF2A;
+    opacity: 1;
+}
+main#contenido>div#formulario>form#form-login>div#campos-formulario>textarea::placeholder{   
+    color: #92BF2A;
+    opacity: 1;
+    font-size: 0.8rem;
+}
+
+main#contenido>div#formulario>form#form-login>div#campos-formulario>a{
+    color: white;
+    font-size: 0.9rem;
+}
+
+main#contenido>div#formulario>form#form-login>div#botones-formulario>a{
+    font-size: 0.8rem;
+    color: white;
+ }
+
+ main#contenido>div#formulario>form#form-login>div#redes-sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+ }
+
+ main#contenido>div#formulario>form#form-login>div#redes-sociales>a>img{
+   height: 2rem;
+   margin: 0.4rem;
+}
+
+ main#contenido>div#formulario>form#form-login>div#botones-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ main#contenido>div#formulario>form#form-login>div#botones-formulario>button{
+    margin-bottom: 0.7rem;
+ }
+
+/************************************************************/
+                            /*PERFIL*/
+/************************************************************/
+
+
+ main#contenido-perfil>div#datos-perfil{
+    display: flex;
+    flex-flow: column;
+    width: 55vw;
+    margin: auto;   
+}
+
+main#contenido-perfil>picture#imagen-perfil>img{
+    padding-top: 25%;
+}
+
+main#contenido-perfil>div#datos-perfil>div#datos-usuario{
+    display: flex;
+    flex-direction: column;
+}
+main#contenido-perfil>div#datos-perfil>div#datos-usuario>h2{
+    margin: 0;
+}
+main#contenido-perfil>div#datos-perfil>div#datos-usuario>label#cumple-usuario{
+    color: #BABABA;
+    font-weight: bold;
+    align-self: center;
+    font-size: 0.8rem;
+}
+
+main#contenido-perfil>div#datos-perfil>div#datos-usuario>label#cumple-usuario>img{
+    display: inline;
+}
+
+.numeros-perfil{
+    color: #92BF2A;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+main#contenido-perfil>div#datos-perfil>div h4{
+    color: #6D9B00;
+    margin: 0; 
+}
+main#contenido-perfil>div#datos-perfil>div h3{
+    margin: 0; 
+    font-weight: normal;
+}
+
+
+main#contenido-perfil>div#datos-perfil>div#datos-registro{
+    margin: 2em 0 0 1.2rem;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+}
+main#contenido-perfil>div#datos-perfil>div#datos-recetas{
+    margin: 0.8em 0 0 1.2rem;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+}
+
+main#contenido-perfil>div#datos-perfil>div#datos-favoritas{
+    margin: 0.8em 0 0 1.2rem;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+}
+
+main#contenido-perfil>div#datos-perfil>div#datos-post{
+    margin: 0.8em 0 0 1.2rem;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+}
+
+
+/*************************************************************/
+/******************************FOOTER*************************/
+/*************************************************************/
+
+footer.pie-principal{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+footer#pie{
+    margin: 0;
+    width: 100%;
+}
+
+ footer#pie>svg#fondo-footer-tablet{
+     display: none;
+ }
+
+
+footer#pie>div#elementos-footer{
+    bottom: 0.5rem;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+footer#pie>div#elementos-footer>nav#redes-sociales{
+    flex: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+footer#pie>div#elementos-footer>nav#redes-sociales img{
+    width: 2rem;
+    height: auto;
+}
+
+footer#pie>div#elementos-footer>nav#navegacion-politica{
+    flex: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+footer#pie>div#elementos-footer>div#logotipo{
+    flex: 20%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+div#volverarriba {
+    color: #454545;
+    background-color: lightgrey;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+    position: fixed;
+    opacity: 0.8;
+    display: none;
+    border-radius: 100%;
+}
+
+div#volverarriba>a {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+  
+/************************************************************/
+                            /*FORMS*/
+/************************************************************/
+
+
+
+footer.footer-formulario>svg{
+    bottom: 0;
+    position: absolute;
+}
+
+label.error { 
+    font-family: "Righteous", sans-serif;
+    float: none;
+    color: white; 
+    padding-left: 0.5rem; 
+    padding-bottom: 0.25rem;
+    font-size: 14px; 
+}
+
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/*****************************BLOG**************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+main#contenido.contenido-blog>div#introduccion{
+    position: relative; 
+}
+
+main#contenido>section#entradas-blog>article>div.contenedor-like>picture>img{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+main#contenido>section#entradas-blog>article>div.contenedor-like>img{
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    bottom: 10vh;
+    left: 20vw;
+    cursor: pointer;
+}
+
+main#contenido>section#entradas-blog>article>h3{
+    margin-top: -1.2rem;
+}
+
+main#contenido>section#entradas-blog>article>p{
+    margin: 0 2rem 0 2rem;
+    font-size: 0.9rem;
+}
+main#contenido>section#entradas-blog>article>label{
+    align-self: flex-start;
+    margin: 1rem 0 1rem 2rem;
+    color: #BABABA;
+    font-size: 0.8rem;
+}
+main#contenido>section#entradas-blog>article>button{
+    align-self: flex-start;
+    margin-left: 2rem;
+    z-index: 0;
+}
+
+span.separador{
+    display: block;
+    height: 1px;
+    width: 40%;
+    background-color: #D96998;
+    margin: 2rem auto 2rem auto;
+}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/*****************************RECETAS************************/
+/***********************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+.articulo-par{
+    background-color: #E0EDC3;
+}
+
+main#contenido>section#entradas-recetas{
+    display: flex;
+    flex-direction: column;
+}
+
+main#contenido>section#entradas-recetas>article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1rem;
+}
+
+main#contenido>section#entradas-recetas>article>div.elementos-receta{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex: 0 50%;
+}
+
+main#contenido>section#entradas-recetas>article>div.elementos-receta>h5{
+    margin: 0;
+    color: #6D9B00;
+}
+
+main#contenido>section#entradas-recetas>article>div.elementos-receta>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main#contenido>section#entradas-recetas>article>div.elementos-receta>div>button{
+    background-color: #6D9B00;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+main#contenido>section#entradas-recetas>article>div.elementos-receta>div>small{
+    color: #BABABA;
+    font-size: 0.7rem;
+}
+
+.mensaje-error{
+    text-align: left;
+    padding: 0.25rem;
+}
+
+
+
+main#contenido-perfil>div.extras-perfil-tablet{
+    display:none;
+}
+
+/*********************************************************************************************/
+/**************************************FIN VERSION MOVIL*****************************************/
+/********************************************************************************************/
+
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/********************************************TABLET***************************************/
+/***********************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/**********************************************************************************************/
+/**********************************************************************************************/
+
+@media (min-width: 666px) and (max-width: 1023px){
+
+h3{
+    margin-top: 8rem;
+    font-size: x-large;
+}
+
+header#cabecera>svg#fondo-cabecera-tablet{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;  
+}
+
+header#cabecera>svg#fondo-cabecera-movil{
+    display: none;
+}  
+
+main#contenido.contenido-formulario{
+    padding-top: 0.5rem;
+} 
+
+main#contenido>div#formulario>picture#fondo-hoja>img#fondo-hoja-tablet{
+    display:block;
+    
+}
+
+main#contenido>div#formulario>picture#fondo-hoja>img#fondo-hoja-movil{
+    display:none;    
+}
+
+main#contenido>div#formulario>form#form-login{
+    background-image: url("images/fondos/fondo-hoja-tablet.svg");
+}
+
+main#contenido{
+    padding-top: 20%;
+}
+
+
+.menu>ul{
+    margin-top: 3.2rem;
+}
+
+main#contenido-perfil-escritorio{
+    display: none;
+}
+
+
+main#contenido>section>article#apartado-sobre-nosotros{
+        display: flex;
+        flex-flow: row wrap;
+}
+
+main#contenido>section>article#apartado-sobre-nosotros>picture#imagen-article-extra{
+    display: block;
+}
+
+main#contenido>section>article#apartado-unete>div#bloque-imagenes{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+main#contenido>section>article#apartado-unete>div#bloque-imagenes>picture#imagen-unete-inversa{
+    display: block;
+}
+
+main#contenido>section>article#apartado-sobre-nosotros>*{
+    flex: 0 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main#contenido.contenido-recetas>section#entradas-recetas{
+    flex-flow: row wrap;
+}
+
+main#contenido.contenido-recetas>section#entradas-recetas>article{
+    flex: 0 50%;
+    flex-flow: column;
+}
+
+main#contenido.contenido-recetas>section#entradas-recetas>article:nth-child(3){
+    background-color: #E0EDC3;
+}
+main#contenido.contenido-recetas>section#entradas-recetas>article:nth-child(4){
+    background-color: white;
+}
+main#contenido.contenido-recetas>section#entradas-recetas>article:nth-child(5){
+    background-color: white;
+}
+
+main#contenido.contenido-recetas>section#entradas-recetas>article>div.elementos-receta>div{
+    flex-flow: column;
+}
+
+main#contenido.contenido-recetas>section#entradas-recetas>article>div.elementos-receta>*{
+    margin: 0.5rem;
+}
+
+main#contenido.contenido-blog>section#entradas-blog{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main#contenido.contenido-blog>section#entradas-blog>article{
+    display: flex;
+    flex-flow: column;
+    flex: 0 50%;
+    align-items: center;
+    padding: 1rem;
+}
+
+main#contenido > section#entradas-blog > article > div.contenedor-like > img{
+    bottom: 6vh;
+    left: 10vw;
+}
+
+div#entrada-blog-expandida{
+    display: block;
+}
+
+p.ingredientes{
+    border: 1px solid #D96998;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 5rem;
+}
+
+main#contenido-perfil>div.extras-perfil-tablet{
+    display:block;
+}
+
+main#contenido-perfil{
+    margin-bottom: 12rem;
+}
+
+main#contenido-perfil>div.extras-perfil-tablet>article>p{
+    margin: 0 5rem 0 5rem;
+}
+
+main#contenido-perfil>div.extras-perfil-tablet>article>button{
+    margin: 1rem 0 0 5rem;
+}
+
+footer#pie>svg#fondo-footer-tablet{
+    display: block;
+}
+
+footer#pie>svg#fondo-footer-movil{
+    display: none;
+}
+footer#pie.footer-perfil{
+    position: relative;
+}
+
+}
+
+
+/*********************************************************************************************/
+/**************************************FIN VERSION TABLET*****************************************/
+/********************************************************************************************/
+
+
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/******************************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/*****************************ESCRITORIO********************************************************/
+/***********************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/**********************************************************************************************/
+/**********************************************************************************************/
+@media (max-width: 1023px) {
+
+    header#cabecera-escritorio {
+        display: none;
+      }
+
+    main#contenido-escritorio {
+        display: none;
+      }
+
+    footer#pie-escritorio {
+      display: none;
+    }
+
+    main#contenido-formulario-escritorio {
+        display: none;
+      }
+
+     
+
+}
+
+@media (min-width: 1024px) {
+
+    header#cabecera {
+        display: none;
+      }
+
+    header#cabecera-form {
+        display: none;
+      }
+
+    main#contenido {
+        display: none;
+      }
+    main#contenido-perfil {
+        display: none;
+      }     
+
+    footer#pie {
+      display: none;
+    }
+    main#contenido-perfil-escritorio {
+        display: flex;
+        padding-top: 10rem;
+      }
+
+/*************************************************************/
+/******************************HEADER*************************/
+/*************************************************************/
+   
+    header#cabecera-escritorio{
+        position: relative;
+        z-index: 99;
+    }
+
+    header#cabecera-escritorio>a>picture#esquina-logotipo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    header#cabecera-escritorio>a>picture#esquina-logotipo>img{
+        width: 30vw;
+    }
+
+    header#cabecera-escritorio>picture>img{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    header#cabecera-escritorio>nav#menu-cabecera-escritorio{
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        z-index: 1;
+    }
+
+    header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera{
+        position: relative;
+       display: flex;
+    }
+
+    header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera>div#botonera-menu-escritorio{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera>div#botonera-menu-escritorio>button{
+      background: none;
+       border-radius:0;
+        font-size: 1.5rem;
+        flex: 25%;
+    }
+    header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera>div#botonera-menu-escritorio>button:first-child{
+
+        border-radius: 60px 0 0 60px;
+     }
+
+
+     header#cabecera-escritorio>button#btn-preparate{
+         position: absolute;
+         top: 35%;
+         left: 0;
+         padding: 1.5rem 3rem 1.5rem 3rem;
+         border-radius: 0 60px 60px 0;
+         font-size: 1.5rem;         
+        background-color: white;
+        color: #D96998;
+     }
+
+     header#cabecera-escritorio>button#btn-entradas{
+        position: absolute;
+        top: 50%;
+        right: 4rem;
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 1.2rem;
+        background-color: #6D9B00;
+        color: white;
+    }
+
+     header#cabecera-escritorio>div#texto-introduccion{
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        font-size: 1.2rem;
+        width: 40%;
+        color: #585656;
+    }
+
+
+/******************************REPRODUCTOR*************************/    
+
+    div#contenedor video{
+        width: 100%;
+        max-width: 30rem;
+    }
+    
+    div#contenedor p{
+        margin:0;
+    }
+    
+    div#contenedor span{
+        color: #726F6F;
+    }
+    
+    div#contenedor{
+        width: 100%;
+        max-width: 30rem;
+        border: 2px solid #6D9B00;
+        border-radius: 0.5rem;
+        font-family: Righteous, 'Courier New', Courier, monospace;
+        background-color: white;
+    } 
+    
+    
+    div#rep_titulo{
+        color: white;
+        text-align: center;
+        padding: 0.6rem;
+        font-size: 0.7rem;
+    }
+    
+    div#barra_progreso{
+        background-color: #D96998;
+        height: 0.2rem;
+    }
+    
+    div#info_superior{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    div#info_superior > div{
+        padding-right: 0.5rem;
+    }
+    
+    div#botonera{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    div#botonera > img{
+        cursor: pointer;
+        padding: 0 1rem 1rem 1rem;
+    }
+    
+    div#contenedor input[type=range]::-moz-range-thumb {
+        background: #d96998;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-appearance: none;
+      }
+    div#contenedor input[type=range]::-moz-range-track {
+        background: #fffdff;
+        border: 0.2px solid #6D9B00;
+        width: 100%;
+        height: 0;
+        cursor: pointer;
+      }
+    
+     div#botonera_velocidad{
+         display: flex;
+         flex-direction: row;
+         padding: 0 0.5rem 0.5rem 0.5rem;
+     }
+    
+     img#btn_play_pause:hover{
+        filter: drop-shadow(1px 1px 3px #6D9B00);
+     }
+     
+    img#btn_stop:hover{
+        filter: drop-shadow(1px 1px 1px #6D9B00);
+     }
+    
+     img#btn_volver:hover{
+        filter: drop-shadow(1px 1px 1px #6D9B00);
+     }
+    
+     img#btn_play_pause:active{
+        filter: drop-shadow(1px 1px 1px #544f54);
+     }
+    
+     div#volumen img:hover{
+        filter: drop-shadow(1px 1px 1px #6D9B00);
+     }
+
+
+/*************************************************************/
+/******************************MAIN*************************/
+/*************************************************************/
+
+
+main#contenido-escritorio{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main#contenido-escritorio>video{
+    align-self: center;
+}
+
+main#contenido-escritorio>section.apartado-blogs{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main#contenido-escritorio>section.apartado-blogs>article{
+    flex: 0 25%;
+    margin: 2rem;
+    position: relative;
+    height: 38rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+main#contenido-escritorio>section.apartado-blogs>article.articulo_primero{
+    background-image: url("images/stock/muestra-blog-home1.png");
+}
+
+main#contenido-escritorio>section.apartado-blogs>article.articulo_central{
+    background-image: url("images/stock/muestra-blog-home2.png");
+}
+
+main#contenido-escritorio>section.apartado-blogs>article.articulo_ultimo{
+    background-image: url("images/stock/muestra-blog-home3.png");
+}
+
+main#contenido-escritorio>section.apartado-blogs>article>picture{
+    width: 100%;
+    height: auto;
+}
+
+main#contenido-escritorio>section.apartado-blogs>article>h3{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+main#contenido-escritorio>section.apartado-blogs>article>p{
+    position: absolute;
+    bottom: 10rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    margin: auto;
+    color: white;
+}
+
+main#contenido-escritorio>section.apartado-blogs>article>small{
+    position: absolute;
+    bottom: 7rem;
+    left: 1.5rem;
+}
+
+main#contenido-escritorio>section.apartado-blogs>article>button{
+    position: absolute;
+    bottom: 4rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+
+main#contenido-escritorio>button{
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: 2rem auto 2rem auto;
+    border: 1px solid #6D9B00;
+    color: #6D9B00;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+main#contenido-escritorio>button#btn-menos{
+    display: none;
+}
+
+main#contenido-escritorio>section#apartado-recetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #E0EDC3;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+
+main#contenido-escritorio>section#apartado-recetas>article>small{
+    color: #92BF2A;
+}
+
+main#contenido-escritorio>section#apartado-info-home>article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    position: relative;
+}
+
+main#contenido-escritorio>section#apartado-info-home>article>picture>img{
+    width: 100%;
+    height: auto;
+}
+main#contenido-escritorio>section#apartado-info-home>article>div{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+main#contenido-escritorio>section.apartado-blogs-extra{
+    display: none;
+}
+
+
+@media (max-width : 1290px) {
+    
+    main#contenido-escritorio>section#apartado-info-home>article>div{        
+        width: 40vw;
+    }
+}
+
+main#contenido-escritorio>section#apartado-info-home>article>div>p{
+    color: lightgray;
+}
+
+main#contenido-escritorio>section#apartado-info-home>article#articulo-unete>div{
+    left: 2rem;
+}
+
+main#contenido-escritorio>form{
+    margin: 4rem 0 2rem 0;
+    align-self: center;
+    position: relative;
+}
+
+main#contenido-escritorio>form>input{
+    font-size: 1.5rem;
+    font-family: "Righteous", sans-serif;
+    color: #92BF2A;
+    background-color: #E0EDC3;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    outline: none;
+    padding: 0.4rem 12rem 0.3rem 0.7rem;
+}
+
+main#contenido-escritorio>form>input::placeholder{
+    color: #92BF2A;
+    opacity: 1;
+}
+
+main#contenido-escritorio>form>button{
+    font-size: 1.3rem;
+    font-family: "Righteous", sans-serif;
+    position: absolute;
+    right: -9.4rem;
+    border-radius: 0 8px 8px 0;
+}
+
+
+
+/*************************************************************/
+/******************************FOOTER*************************/
+/*************************************************************/
+
+footer#pie-escritorio{
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+footer#pie-escritorio *{
+    margin: 0;
+}
+
+footer#pie-escritorio>picture{
+    margin: 0;
+    width: 100%;
+    height: auto;
+ }
+footer#pie-escritorio>picture>img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+footer#pie-escritorio>div#elementos-footer-escritorio{
+    bottom: 0.5rem;
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+}
+
+footer#pie-escritorio>div#elementos-footer-escritorio>nav#redes-sociales-escritorio{
+    flex: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+footer#pie-escritorio>div#elementos-footer-escritorio>nav#navegacion-politica-escritorio{
+    flex: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+footer#pie-escritorio>div#elementos-footer-escritorio>div#logotipo{
+    flex: 20%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+footer#pie-escritorio>div#elementos-footer-escritorio>div#logotipo>picture{
+    cursor: pointer;
+
+}
+
+
+/*************************************************************/
+/**********************PRIVACIDAD Y COOKIES********************/
+/*************************************************************/
+
+main#contenido.contenido-escritorio{
+    display: flex;
+    padding-top: 12rem;
+    margin: 0 3rem 0 3rem;
+}
+
+/*************************************************************/
+/*************************PERFIL***************************/
+/*************************************************************/
+
+header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera>div#botonera-menu-escritorio>button#btn-usuario{
+    background-color: #D96998;
+}
+
+main#contenido-perfil-escritorio>div#datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+main#contenido-perfil-escritorio>div#datos>div#datos-usuario-escritorio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main#contenido-perfil-escritorio>div#datos>div#datos-usuario-escritorio>div#cumple-escritorio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main#contenido-perfil-escritorio>div#datos>div#datos-usuario-escritorio>div#cumple-escritorio>label#cumple-usuario{
+    color: #BABABA;
+    font-weight: bold;
+    align-self: center;
+    font-size: 0.8rem;
+}
+
+main#contenido-perfil-escritorio>div#datos>div#datos-usuario-escritorio>div#cumple-escritorio>img{
+    margin: 0;
+}
+
+
+main#contenido-perfil-escritorio>div#datos>div#datos-perfil-escritorio{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+main#contenido-perfil-escritorio>div#datos>div#datos-perfil-escritorio>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+
+/*************************************************************/
+/*************************RECETAS***************************/
+/*************************************************************/
+
+ header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera>div#botonera-menu-escritorio>button#btn-recetas{
+    background-color: #D96998;
+}
+
+main#contenido-escritorio>section#entradas-blog-escritorio{
+    width: 60%;
+    margin: 5rem auto;
+
+}
+
+
+/*************************************************************/
+/*************************BLOG***************************/
+/*************************************************************/
+
+header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera>div#botonera-menu-escritorio>button#btn-blog{
+    background-color: #D96998;
+}
+
+
+/*************************************************************/
+/*************************CONTACTO***************************/
+/*************************************************************/
+
+header#cabecera-escritorio>nav#menu-cabecera-escritorio>div#contenedor-botonera>div#botonera-menu-escritorio>button#btn-contacto{
+    background-color: #D96998;
+
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>picture#fondo-hoja-escritorio>img{
+    width: 100%;
+    height: auto;
+    padding-top: 12rem;
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio{
+    position: relative;
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div{
+    margin: 0.7rem;
+    
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#campos-formulario-escritorio>div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#campos-formulario-escritorio>div>input{
+    font-family: "Righteous", sans-serif;
+    color: #92BF2A;
+    background-color: #E0EDC3;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    margin-bottom: 0.7rem;
+    flex: 100%;
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#campos-formulario-escritorio>div>textarea{
+    font-family: "Righteous", sans-serif;
+    color: #92BF2A;
+    background-color: #E0EDC3;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    margin-bottom: 0.7rem;
+    resize: none;
+    flex: 100%;
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#campos-formulario-escritorio>div>input::placeholder{   
+    color: #92BF2A;
+    opacity: 1;
+}
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#campos-formulario-escritorio>div>textarea::placeholder{   
+    color: #92BF2A;
+    opacity: 1;
+    font-size: 0.8rem;
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#campos-formulario-escritorio>a{
+    color: white;
+    font-size: 0.9rem;
+}
+
+main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#botones-formulario-escritorio>a{
+    font-size: 0.8rem;
+    color: white;
+ }
+
+ main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#redes-sociales-escritorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+ }
+
+ main#contenido-formulario-escritorio>div#formulario-escritorio>form#form-login-escritorio>div#redes-sociales-escritorio>a>img{
+   height: 2rem;
+   margin: 0.4rem;
+}
+
+
+  }
+
+  @media (min-width: 1024px) and (max-width: 1150px){
+
+    main#contenido-escritorio>section#apartado-recetas>article:first-child{
+        display: none;
+    }
+    main#contenido-escritorio>section#apartado-recetas>article:last-child{
+        display: none;
+    }
+
+    main#contenido-escritorio>section#apartado-info-home>article>div{        
+        width: 50vw;
+    }
+
+  }
+
+
+  
