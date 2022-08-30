@@ -1,8 +1,8 @@
-## Nature Bebé
+## <a href="https://nature-bebe.netlify.app" target="_blank">Nature Bebé</a>
 
 <br>
 <p align="center">
-<img src="https://github.com/GabiOneZero/portfolio-images/blob/main/nature-bebe-desktop.png">
+<a href="https://nature-bebe.netlify.app"><img src="https://github.com/GabiOneZero/portfolio-images/blob/main/nature-bebe-desktop.png"></a>
 </p>
 <p align="center">
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
